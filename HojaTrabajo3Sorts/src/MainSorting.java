@@ -10,7 +10,9 @@
  * @author Rodrigo Morales
  * @version 1.0
  */
+
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 public class MainSorting {
     
@@ -30,17 +32,30 @@ public class MainSorting {
          int tamaño=3000;
          int[] lista1 = new int[tamaño];
         int[] lista2 = new int[tamaño];
-        
+        ArrayList<Integer> lista3 = new  ArrayList<>();
+         ArrayList<Integer> lista4 = new  ArrayList<>();
+          ArrayList<Integer> lista5 = new  ArrayList<>();
          String linea;
           for (int i = 0; i < tamaño; i++) {
               lista1[i]=Integer.parseInt(br.readLine());   
           }
           
           lista2=lista1;
+          
          int[] listaO1= GnomeSort.gnomeSort(lista1);
          GnomeSort.gnomeSort2(listaO1);
          int[] listaO2= MergeSort.sort(lista2);
          MergeSort.sort2(listaO2);
+         
+          for (int i = 0; i < tamaño; i++) {
+              lista3.add(lista1[i]);
+          }
+          lista4=lista3;
+          lista5=lista3;
+        
+          ArrayList<Integer> lista3O =BubbleSort.BubbleSort(lista3);
+          BubbleSort.BubbleSort2(lista3O);
+         
          
        
     
