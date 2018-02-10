@@ -56,6 +56,11 @@ public class MainSorting {
           ArrayList<Integer> lista3O =BubbleSort.BubbleSort(lista3);
           BubbleSort.BubbleSort2(lista3O);
          
+          ArrayList<Integer> lista4O =RadixSort.RadixSort(lista4);
+          RadixSort.RadixSort2(lista4O);
+         
+         ArrayList<Integer> lista5O = QuickSort.QuickSort(lista4,0,tamaño-1);
+         QuickSort.QuickSort2(lista5O,0,tamaño-1);
          
        
     
