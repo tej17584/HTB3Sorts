@@ -24,12 +24,11 @@ public class MainSorting {
       try {
          // Apertura del fichero y creacion de BufferedReader para poder
          // hacer una lectura comoda (disponer del metodo readLine()).
-         archivo = new File ("C:\\Users\\Jose Tejada\\Desktop\\2018\\Algoritmos y Estructura de Datos\\Hojas de Trabajo\\Hoja No.3\\HTB3Sorts\\random.txt");
-         fr = new FileReader (archivo);
+         fr= new FileReader("random.txt");
          br = new BufferedReader(fr);
 
          // Lectura del fichero
-         int tamaño=3000;
+         int tamaño=500;
          int[] lista1 = new int[tamaño];
         int[] lista2 = new int[tamaño];
         ArrayList<Integer> lista3 = new  ArrayList<>();
@@ -39,6 +38,7 @@ public class MainSorting {
           for (int i = 0; i < tamaño; i++) {
               lista1[i]=Integer.parseInt(br.readLine());   
           }
+          
           
           lista2=lista1;
           
